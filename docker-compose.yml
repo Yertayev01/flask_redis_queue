@@ -14,6 +14,11 @@ services:
     environment:
       - FLASK_DEBUG=1
       - APP_SETTINGS=project.server.config.DevelopmentConfig
+<<<<<<< HEAD
+=======
+    depends_on:
+      - redis
+>>>>>>> f66a52617985123e168983bc2b2168846dd154f3
 
   worker:
     image: web
@@ -36,4 +41,8 @@ services:
       - 9181:9181
     command: rq-dashboard -H redis
     depends_on:
+<<<<<<< HEAD
       - redis
+=======
+      - redis
+>>>>>>> f66a52617985123e168983bc2b2168846dd154f3

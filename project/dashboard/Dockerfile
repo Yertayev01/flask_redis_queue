@@ -8,4 +8,8 @@ RUN pip install click==7.1.2
 
 EXPOSE 9181
 
+<<<<<<< HEAD
 CMD ["rq-dashboard"]
+=======
+CMD ["rq-dashboard"]
+>>>>>>> f66a52617985123e168983bc2b2168846dd154f3
